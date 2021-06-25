@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="product_question_slider" class="AHT\Question\Block\ListqaWidget" >
+   	    <label translate="true">Product QA</label>
+   	    <description translate="true">List product question and answer</description>
+        <parameters>
+            <parameter name="number_show" sort_order="10" visible="true" xsi:type="text" required="true">
+                <label>Number item to show</label>
+            </parameter>
+            <parameter name="template" xsi:type="select" required="true" visible="true" sort_order="26">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="widget/qa.phtml" selected="true">
+                        <label translate="true">Default template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

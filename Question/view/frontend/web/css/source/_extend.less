@@ -1,0 +1,25 @@
+@import 'slick.less';
+@import 'slick-theme.less';
+
+& when (@media-common = true) {
+    .question-content {
+        margin-bottom: 10px;
+        &.admin-answer {
+            font-weight: bold;
+        }
+    }
+
+    .fieldset > .field > .label {
+        margin: 8px 0 8px;
+    }
+
+    .other-answer-form {
+        .question-content {
+            .content_answer,
+            .name_answer {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    }
+}
